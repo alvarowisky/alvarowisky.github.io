@@ -1,0 +1,26 @@
+title: Alvaro Wisky
+email: alvarowisky@hotmail.com
+description: >-
+  Conteúdos relacionados a fisioterapia, acupuntura, reiki e psicanálise. Aqui
+  você encontrará informações sobre diferentes técnicas, benefícios e aplicações
+  dessas práticas terapêuticas. Nossos artigos abordam temas como tratamentos de
+  lesões, fortalecimento do corpo, alívio de dores, equilíbrio energético,
+  bem-estar emocional e autoconhecimento. Explore os nossos conteúdos para obter
+  informações úteis e educativas sobre essas áreas e descubra como elas podem
+  contribuir para o seu bem-estar físico, mental e emocional.
+baseurl: ''
+url: 'https://alvarowisky.github.io'
+lang: pt-BR
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
