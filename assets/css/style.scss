@@ -1,3 +1,18 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+@import 'global';
+
+// components
+@import 'components/buttons';
+@import 'components/navbar';
+@import 'components/breadcrumbs';
+
+// sections
+@import 'sections/general';
+@import 'sections/about';
+@import 'sections/contact';
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/hero';

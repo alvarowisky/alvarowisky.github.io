@@ -12,6 +12,28 @@ baseurl: ''
 url: 'https://alvarowisky.github.io'
 lang: pt-BR
 
+sass:
+  style: compressed
+
+# output options (more information on Jekyll's site)
+markdown: kramdown
+highlighter: rouge
+permalink: "/:year-:month-:day-:title/"
+paginate_path: "/page/:num/"
+paginate: 10
+
+kramdown:
+  input: GFM
+
+# --- footer social media links --- #
+social-network-links:
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/alvaro-wisky/"
+    icon: "bx bxl-linkedin"
+  - name: "Instagram"
+    url: "https://www.instagram.com/alvarowisky/"
+    icon: "bx bxl-instagram"
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
