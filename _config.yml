@@ -15,6 +15,9 @@ lang: pt-BR
 sass:
   style: compressed
 
+# fill in your Formspree ID to enable contact form
+formspree: xpzgnajr
+
 # output options (more information on Jekyll's site)
 markdown: kramdown
 highlighter: rouge
