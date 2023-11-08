@@ -367,6 +367,16 @@
     }
 
     const questionForm = document.getElementById('questionForm');
+    const ctx = document.getElementById('result-chart');
+
+    const bsCollapseQuestions = new bootstrap.Collapse('#collapse-questions', {
+        toggle: false
+    });
+
+    const bsCollapseCharts = new bootstrap.Collapse('#collapse-charts', {
+        toggle: false
+    });
+
     questionForm.addEventListener('submit', function(event) {
         event.preventDefault();
         if (questionForm.checkValidity()) {
@@ -382,6 +392,31 @@
             let homemComum = getQuestionResult("homem-comum");
             let inocente = getQuestionResult("inocente");
             let governante = getQuestionResult("governante");
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sábio', 'Mago', 'Explorador', 'Criador', 'Herói', 'Rebelde', 'Amante', 'Tolo', 'Cuidador', 'Homem Comum', 'Inocente', 'Governante'],
+                    datasets: [{
+                        label: 'Arquétipo',
+                        data: [sabio, mago, explorador, criador, heroi, rebelde, amante, tolo, cuidador, homemComum, inocente, governante],
+                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: 'rgb(54, 162, 235)'
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            bsCollapseQuestions.hide();
+            bsCollapseCharts.show();
+
         }
     });
+
 })();
