@@ -2,283 +2,291 @@
     'use strict'
 
     const questions = [{
-            key: 1,
+            key: "sabio-01",
             value: "Acredita no poder do conhecimento e da sabedoria para guiar suas ações e decisões na vida?"
         },
         {
-            key: 2,
+            key: "sabio-02",
             value: "Costuma oferecer conselhos e reflexões ponderadas aos outros?"
         },
         {
-            key: 3,
+            key: "sabio-03",
             value: "Valoriza a busca pela verdade e pelo entendimento profundo das questões?"
         },
         {
-            key: 4,
+            key: "sabio-04",
             value: "É calmo e paciente, evitando agir impulsivamente em momentos de tensão?"
         },
         {
-            key: 5,
+            key: "sabio-05",
             value: "Acredita que a experiência de vida é uma fonte valiosa de aprendizado e crescimento pessoal?"
         },
         {
-            key: 6,
+            key: "sabio-06",
             value: "Teme perder sua capacidade de aprender, entender ou ser reconhecido por sua sabedoria?"
         },
         {
-            key: 7,
+            key: "mago-01",
             value: "Acredita que o conhecimento e a magia podem trazer transformação e mudança significativa?"
         },
         {
-            key: 8,
+            key: "mago-02",
             value: "Afirma possuir habilidades ou conhecimentos especiais além da compreensão comum?"
         },
         {
-            key: 9,
+            key: "mago-03",
             value: "Valoriza a busca pelo autoconhecimento e o aprimoramento constante de suas habilidades mágicas?"
         },
         {
-            key: 10,
+            key: "mago-04",
             value: "É enigmático, muitas vezes falando de forma misteriosa ou usando metáforas para transmitir suas ideias?"
         },
         {
-            key: 11,
+            key: "mago-05",
             value: "Acredita que existe uma conexão profunda entre o mundo físico e espiritual, e que a magia é uma forma de explorá-la?"
         },
         {
-            key: 12,
+            key: "mago-06",
             value: "Teme que seus poderes ou conhecimentos sejam mal utilizados ou caiam em mãos erradas?"
         },
         {
-            key: 13,
+            key: "explorador-01",
             value: "Acredita que a vida é uma jornada de descoberta e que vale a pena explorar o desconhecido?"
         },
         {
-            key: 14,
+            key: "explorador-02",
             value: "Costuma buscar constantemente novas aventuras e desafios em sua vida?"
         },
         {
-            key: 15,
+            key: "explorador-03",
             value: "Valoriza a liberdade e a independência, buscando evitar restrições e limitações em sua jornada de exploração?"
         },
         {
-            key: 16,
+            key: "explorador-04",
             value: "É entusiasmado, energético e disposto a se adaptar a novas situações?"
         },
         {
-            key: 17,
+            key: "explorador-05",
             value: "Acredita que as experiências e aprendizados obtidos por meio da exploração são fundamentais para o crescimento pessoal?"
         },
         {
-            key: 18,
+            key: "explorador-06",
             value: "Teme ficar preso em uma rotina monótona e perder a oportunidade de explorar e viver aventuras emocionantes?"
         },
         {
-            key: 19,
+            key: "criador-01",
             value: "Acredita que a criação e a expressão artística são fundamentais para enriquecer a vida e a sociedade?"
         },
         {
-            key: 20,
+            key: "criador-02",
             value: "Costuma buscar constantemente formas de expressar sua criatividade e materializar suas ideias?"
         },
         {
-            key: 21,
+            key: "criador-03",
             value: "Valoriza a originalidade e a autenticidade, buscando criar algo único e pessoal em suas obras?"
         },
         {
-            key: 22,
+            key: "criador-04",
             value: "É imaginativo, inspirado e muitas vezes mergulha em seus pensamentos e visões criativas?"
         },
         {
-            key: 23,
+            key: "criador-05",
             value: "Acredita que a arte e a criação têm o poder de provocar emoções, despertar reflexões e promover mudanças?"
         },
         {
-            key: 24,
+            key: "criador-06",
             value: "Teme perder sua capacidade criativa ou ser incapaz de produzir algo significativo e impactante?"
         },
         {
-            key: 25,
+            key: "heroi-01",
             value: "Acredita que é seu dever e propósito ajudar e proteger os outros, mesmo que isso envolva sacrifícios pessoais?"
         },
         {
-            key: 26,
-            value: "Está disposto a enfrentar perigos e obstáculos para superar ameaças e salvar o dia? Valoriza a justiça, a honra e a lealdade como princípios essenciais em suas ações heroicas?"
+            key: "heroi-02",
+            value: "Está disposto a enfrentar perigos e obstáculos para superar ameaças e salvar o dia?"
         },
         {
-            key: 27,
+            key: "heroi-03",
+            value: "Valoriza a justiça, a honra e a lealdade como princípios essenciais em suas ações heroicas?"
+        },
+        {
+            key: "heroi-04",
             value: "É altruísta, agindo muitas vezes em benefício dos outros, mesmo que isso implique riscos para si mesmo?"
         },
         {
-            key: 28,
+            key: "heroi-05",
             value: "Acredita que é possível fazer a diferença e causar impacto positivo no mundo ao lutar contra o mal e a injustiça?"
         },
         {
-            key: 29,
+            key: "heroi-06",
             value: "Teme ser incapaz de proteger aqueles que ama ou falhar em cumprir suas missões heroicas?"
         },
         {
-            key: 30,
+            key: "rebelde-01",
             value: "Acredita que desafiar o status quo e lutar contra a opressão é fundamental para promover mudanças positivas?"
         },
         {
-            key: 31,
+            key: "rebelde-02",
             value: "Costuma desafiar as regras e convenções sociais, buscando seu próprio caminho e identidade?"
         },
         {
-            key: 32,
+            key: "rebelde-03",
             value: "Valoriza a liberdade pessoal e a autenticidade, rejeitando pressões para se encaixar em padrões estabelecidos?"
         },
         {
-            key: 33,
+            key: "rebelde-04",
             value: "É audacioso, ousado e muitas vezes assume riscos para seguir suas convicções?"
         },
         {
-            key: 34,
+            key: "rebelde-05",
             value: "Acredita que é possível e necessário questionar as estruturas de poder e as normas sociais para criar um mundo mais justo?"
         },
         {
-            key: 35,
+            key: "rebelde-06",
             value: "Teme ser sufocado ou controlado pelas instituições ou expectativas sociais, perdendo sua autonomia e individualidade?"
         },
         {
-            key: 36,
+            key: "amante-01",
             value: "Acredita que o amor é uma das forças mais poderosas que conecta e transforma as pessoas?"
         },
         {
-            key: 37,
+            key: "amante-02",
             value: "Valoriza o amor, a beleza e a harmonia em todas as áreas da vida, buscando criar relacionamentos significativos?"
         },
         {
-            key: 38,
+            key: "amante-03",
             value: "Valoriza a empatia e a conexão emocional, buscando compreender as emoções e necessidades dos outros?"
         },
         {
-            key: 39,
-            value: "É carinhoso, afetuoso e procura demonstrar cuidado e ternura em seus relacionamentos? Acredita que o amor pode curar feridas emocionais e trazer sentido e propósito à vida?"
+            key: "amante-04",
+            value: "É carinhoso, afetuoso e procura demonstrar cuidado e ternura em seus relacionamentos?"
         },
         {
-            key: 40,
+            key: "amante-05",
+            value: "Acredita que o amor pode curar feridas emocionais e trazer sentido e propósito à vida?"
+        },
+        {
+            key: "amante-06",
             value: "Teme a solidão e o abandono, buscando evitar situações que possam levar ao rompimento de laços afetivos?"
         },
         {
-            key: 41,
+            key: "tolo-01",
             value: "Acredita que a vida é uma brincadeira e que é melhor viver sem se preocupar com as responsabilidades?"
         },
         {
-            key: 42,
+            key: "tolo-02",
             value: "Costuma agir impulsivamente, sem considerar as possíveis consequências de suas ações?"
         },
         {
-            key: 43,
+            key: "tolo-03",
             value: "Valoriza a liberdade e a espontaneidade, evitando se prender a regras ou planejamentos?"
         },
         {
-            key: 44,
+            key: "tolo-04",
             value: "É despreocupado, leve e muitas vezes age de forma infantil ou lúdica?"
         },
         {
-            key: 45,
+            key: "tolo-05",
             value: "Acredita que as coisas sempre darão certo e que tudo acabará bem, mesmo sem tomar precauções?"
         },
         {
-            key: 46,
+            key: "tolo-06",
             value: "Teme perder a liberdade e a diversão, mas pode não perceber os perigos ou problemas em suas ações?"
         },
         {
-            key: 47,
+            key: "cuidador-01",
             value: "Acredita que cuidar e apoiar os outros é uma forma significativa de contribuir para o mundo?"
         },
         {
-            key: 48,
+            key: "cuidador-02",
             value: "Costuma se colocar à disposição dos outros, oferecendo ajuda e suporte quando necessário?"
         },
         {
-            key: 49,
+            key: "cuidador-03",
             value: "Valoriza o bem-estar, a saúde e a felicidade dos outros, colocando suas necessidades em primeiro lugar?"
         },
         {
-            key: 50,
+            key: "cuidador-04",
             value: "É compassivo, gentil e disposto a ouvir e compreender os problemas e preocupações alheias?"
         },
         {
-            key: 51,
+            key: "cuidador-05",
             value: "Acredita que a empatia e o cuidado são fundamentais para criar conexões significativas e relacionamentos saudáveis?"
         },
         {
-            key: 52,
+            key: "cuidador-06",
             value: "Teme não ser capaz de ajudar ou proteger aqueles que ama, ou se preocupa em ser percebido como negligente ou insensível?"
         },
         {
-            key: 53,
+            key: "homem-comum-01",
             value: "Acredita que viver uma vida simples e comum é uma forma válida de encontrar significado e satisfação?"
         },
         {
-            key: 54,
+            key: "homem-comum-02",
             value: "Normalmente leva uma vida comum, sem estar envolvido em grandes aventuras ou acontecimentos extraordinários?"
         },
         {
-            key: 55,
+            key: "homem-comum-03",
             value: "Valoriza a estabilidade, a rotina e a segurança em sua vida cotidiana?"
         },
         {
-            key: 56,
+            key: "homem-comum-04",
             value: "É realista, pragmático e geralmente lida bem com as situações comuns do dia a dia?"
         },
         {
-            key: 57,
+            key: "homem-comum-05",
             value: "Acredita que a felicidade pode ser encontrada nas pequenas coisas da vida e nos relacionamentos com as pessoas ao seu redor?"
         },
         {
-            key: 58,
+            key: "homem-comum-06",
             value: "Teme perder sua estabilidade e segurança, ou se sente ansioso com mudanças radicais em sua vida comum?"
         },
         {
-            key: 59,
+            key: "inocente-01",
             value: "Acredita que a vida é cheia de possibilidades e que o mundo é um lugar bom e acolhedor?"
         },
         {
-            key: 60,
+            key: "inocente-02",
             value: "Tende a ver o lado positivo das situações e das pessoas, evitando ceticismo ou desconfiança?"
         },
         {
-            key: 61,
+            key: "inocente-03",
             value: "Valoriza a inocência e a simplicidade, buscando manter-se afastado de negatividade e cinismo?"
         },
         {
-            key: 62,
+            key: "inocente-04",
             value: "É gentil, amável e tende a tratar os outros com benevolência e compaixão?"
         },
         {
-            key: 63,
+            key: "inocente-05",
             value: "Acredita que é possível encontrar beleza e bondade em todas as coisas e que as pessoas são, em sua essência, boas?"
         },
         {
-            key: 64,
+            key: "inocente-06",
             value: "Teme ser enganado, traído ou perder sua inocência, podendo se sentir vulnerável diante da maldade ou crueldade do mundo?"
         },
         {
-            key: 65,
+            key: "governante-01",
             value: "Acredita que governar é uma responsabilidade que requer sabedoria e compromisso com o bem-estar do povo?"
         },
         {
-            key: 66,
+            key: "governante-02",
             value: "Exerce influência e autoridade sobre outros, buscando guiar e liderar de forma justa e benevolente?"
         },
         {
-            key: 67,
+            key: "governante-03",
             value: "Valoriza a estabilidade, a ordem e a prosperidade do seu reino, comunidade ou organização?"
         },
         {
-            key: 68,
+            key: "governante-04",
             value: "É carismático, assertivo e possui habilidades de liderança que inspiram confiança e respeito?"
         },
         {
-            key: 69,
+            key: "governante-05",
             value: "Acredita que o poder deve ser usado para proteger e melhorar a vida das pessoas sob sua liderança?"
         },
         {
-            key: 70,
+            key: "governante-06",
             value: "Teme perder o controle, ser desafiado ou perder o respeito e a lealdade dos seus súditos ou seguidores?"
         }
     ];
@@ -323,6 +331,7 @@
         inputYes.setAttribute("name", "question-" + question.key);
         inputYes.setAttribute("id", "question-" + question.key + "-yes");
         inputYes.setAttribute("value", "yes");
+        inputYes.setAttribute("required", "required");
 
         formCheckYes.classList.add("form-check");
         formCheckYes.classList.add("form-check-inline");
@@ -345,4 +354,34 @@
         count++;
     });
 
+    function convertToPercentage(value) {
+        return Math.round(value * 100);
+    }
+
+    function getQuestionResult(questionKey) {
+        let questions = document.querySelectorAll("input[name^=question-" + questionKey + "]:checked");
+        let yesAnswers = Array.from(questions).filter(function(element) {
+            return element.value == "yes";
+        }).length;
+        return convertToPercentage(yesAnswers / 6);
+    }
+
+    const questionForm = document.getElementById('questionForm');
+    questionForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (questionForm.checkValidity()) {
+            let sabio = getQuestionResult("sabio");
+            let mago = getQuestionResult("mago");
+            let explorador = getQuestionResult("explorador");
+            let criador = getQuestionResult("criador");
+            let heroi = getQuestionResult("heroi");
+            let rebelde = getQuestionResult("rebelde");
+            let amante = getQuestionResult("amante");
+            let tolo = getQuestionResult("tolo");
+            let cuidador = getQuestionResult("cuidador");
+            let homemComum = getQuestionResult("homem-comum");
+            let inocente = getQuestionResult("inocente");
+            let governante = getQuestionResult("governante");
+        }
+    });
 })();
