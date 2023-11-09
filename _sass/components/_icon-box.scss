@@ -1,0 +1,31 @@
+.icon-box {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	transition: 0.3s;
+	border: 1px solid #149ddd;
+	i {
+		font-size: 32px;
+		padding-right: 10px;
+		line-height: 1;
+	}
+	h3 {
+		font-weight: 700;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		font-size: 16px;
+		a {
+			color: #37423b;
+			transition: 0.3s;
+		}
+	}
+	&:hover {
+		border-color: #5fcf80;
+		h3 {
+			a {
+				color: #5fcf80;
+			}
+		}
+	}
+}

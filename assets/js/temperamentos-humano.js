@@ -416,7 +416,10 @@
     // embaralha as respostas aninhadas dentro de cada pergunta
     const shuffledQuestionsWithAnswers = shuffledQuestions.map(question => {
         const shuffledAnswers = question.answers.sort(() => Math.random() - 0.5);
-        return { ...question, answers: shuffledAnswers };
+        return {
+            ...question,
+            answers: shuffledAnswers
+        };
     });
 
     const questionResults = document.getElementById("questionResults");
@@ -472,12 +475,40 @@
         countQuestions++;
     });
 
-    questionForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        if (!questionForm.checkValidity()) {
+    function convertToPercentage(value) {
+        return Math.round(value * 100) + " %";
+    }
 
+    function getQuestionResult(questionKey) {
+        let questions = document.querySelectorAll("input[name^=answer-]:checked");
+        let yesAnswers = Array.from(questions).filter(function(element) {
+            return element.value == questionKey;
+        }).length;
+        return convertToPercentage(yesAnswers / 20);
+    }
 
-        }
+    const bsCollapseQuestions = new bootstrap.Collapse('#collapse-questions', {
+        toggle: false
+    });
+    const bsCollapseResult = new bootstrap.Collapse('#collapse-result', {
+        toggle: false
     });
 
+    questionForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (questionForm.checkValidity()) {
+            let colerico = getQuestionResult("colerico");
+            let melancolico = getQuestionResult("melancolico");
+            let fleumatico = getQuestionResult("fleumatico");
+            let sanguineo = getQuestionResult("sanguineo");
+
+            document.getElementById('result-colerico').textContent = colerico;
+            document.getElementById('result-melancolico').textContent = melancolico;
+            document.getElementById('result-fleumatico').textContent = fleumatico;
+            document.getElementById('result-sanguineo').textContent = sanguineo;
+
+            bsCollapseQuestions.hide();
+            bsCollapseResult.show();
+        }
+    });
 })();

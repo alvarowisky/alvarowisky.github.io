@@ -291,11 +291,11 @@
         }
     ];
 
-    const shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+    const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     const questionResults = document.getElementById("questionResults");
     let count = 1;
 
-    shuffleQuestions.forEach((question) => {
+    shuffledQuestions.forEach((question) => {
 
         let row = document.createElement("div");
         let formGroup = document.createElement("div");
@@ -355,7 +355,7 @@
     });
 
     function convertToPercentage(value) {
-        return Math.round(value * 100);
+        return Math.round(value * 100) + " %";
     }
 
     function getQuestionResult(questionKey) {
@@ -367,13 +367,10 @@
     }
 
     const questionForm = document.getElementById('questionForm');
-    const ctx = document.getElementById('result-chart');
-
     const bsCollapseQuestions = new bootstrap.Collapse('#collapse-questions', {
         toggle: false
     });
-
-    const bsCollapseCharts = new bootstrap.Collapse('#collapse-charts', {
+    const bsCollapseResult = new bootstrap.Collapse('#collapse-result', {
         toggle: false
     });
 
@@ -393,29 +390,21 @@
             let inocente = getQuestionResult("inocente");
             let governante = getQuestionResult("governante");
 
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Sábio', 'Mago', 'Explorador', 'Criador', 'Herói', 'Rebelde', 'Amante', 'Tolo', 'Cuidador', 'Homem Comum', 'Inocente', 'Governante'],
-                    datasets: [{
-                        label: 'Arquétipo',
-                        data: [sabio, mago, explorador, criador, heroi, rebelde, amante, tolo, cuidador, homemComum, inocente, governante],
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgb(54, 162, 235)'
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
+            document.getElementById('result-sabio').textContent = sabio;
+            document.getElementById('result-mago').textContent = mago;
+            document.getElementById('result-explorador').textContent = explorador;
+            document.getElementById('result-criador').textContent = criador;
+            document.getElementById('result-heroi').textContent = heroi;
+            document.getElementById('result-rebelde').textContent = rebelde;
+            document.getElementById('result-amante').textContent = amante;
+            document.getElementById('result-tolo').textContent = tolo;
+            document.getElementById('result-cuidador').textContent = cuidador;
+            document.getElementById('result-homem-comum').textContent = homemComum;
+            document.getElementById('result-inocente').textContent = inocente;
+            document.getElementById('result-governante').textContent = governante;
 
             bsCollapseQuestions.hide();
-            bsCollapseCharts.show();
-
+            bsCollapseResult.show();
         }
     });
 

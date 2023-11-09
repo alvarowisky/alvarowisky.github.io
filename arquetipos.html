@@ -3,21 +3,143 @@ layout: page
 title: "Arquétipos"
 ---
 
-<div class="row" data-aos="fade-in">
-    <div id="collapse-questions" class="collapse show col-lg-12 mt-5 mt-lg-0 align-items-stretch">
-        <form id="questionForm"
-              role="form"
-              class="needs-validation quiz-form"
-              novalidate>
+<div class="row gy-4">
+    <div id="collapse-questions" class="collapse show col-lg-12">
+        <form id="questionForm" role="form" class="needs-validation quiz-form" novalidate>
             <div id="questionResults"></div>
             <div>
                 <button type="submit">Enviar</button>
             </div>
         </form>
     </div>
-    <div id="collapse-charts" class="collapse hide col-lg-12 mt-5 mt-lg-0">
-        <div class="quiz-chart">
-            <canvas id="result-chart"></canvas>
+    <div id="collapse-result" class="collapse hide col-lg-12">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="quiz-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Perfil</th>
+                                <th scope="col">Porcentagem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sábio</td>
+                                <td id="result-sabio"></td>
+                            </tr>
+                            <tr>
+                                <td>Mago</td>
+                                <td id="result-mago"></td>
+                            </tr>
+                            <tr>
+                                <td>Explorador</td>
+                                <td id="result-explorador"></td>
+                            </tr>
+                            <tr>
+                                <td>Criador</td>
+                                <td id="result-criador"></td>
+                            </tr>
+                            <tr>
+                                <td>Herói</td>
+                                <td id="result-heroi"></td>
+                            </tr>
+                            <tr>
+                                <td>Rebelde</td>
+                                <td id="result-rebelde"></td>
+                            </tr>
+                            <tr>
+                                <td>Amante</td>
+                                <td id="result-amante"></td>
+                            </tr>
+                            <tr>
+                                <td>Tolo</td>
+                                <td id="result-tolo"></td>
+                            </tr>
+                            <tr>
+                                <td>Cuidador</td>
+                                <td id="result-cuidador"></td>
+                            </tr>
+                            <tr>
+                                <td>Homem Comum</td>
+                                <td id="result-homem-comum"></td>
+                            </tr>
+                            <tr>
+                                <td>Inocente</td>
+                                <td id="result-inocente"></td>
+                            </tr>
+                            <tr>
+                                <td>Governante</td>
+                                <td id="result-governante"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Sábio</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Mago</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Explorador</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Criador</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Héroi</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Rebelde</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Amante</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Tolo</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Cuidador</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Homem Comum</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Inocente</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="icon-box">
+                            <h3><a href="">Governador</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
