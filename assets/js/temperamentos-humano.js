@@ -462,6 +462,14 @@
             formCheck.append(label);
             formCheck.append(input);
 
+            if (countAnswers === 4) {
+                let feedback = document.createElement("div");
+
+                feedback.classList.add("invalid-feedback");
+                feedback.textContent = "Por favor, selecione uma opção.";
+                formCheck.append(feedback);
+            }
+
             formGroup.append(formCheck);
 
             countAnswers++;
@@ -510,5 +518,6 @@
             bsCollapseQuestions.hide();
             bsCollapseResult.show();
         }
+        questionForm.classList.add('was-validated');
     });
 })();

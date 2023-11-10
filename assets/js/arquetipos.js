@@ -306,10 +306,14 @@
         let formCheckNo = document.createElement("div");
         let inputNo = document.createElement("input");
         let labelNo = document.createElement("label");
+        let feedback = document.createElement("div");
 
         labelNo.classList.add("form-check-label");
         labelNo.setAttribute("for", "question-" + question.key + "-no");
         labelNo.textContent = "Não";
+
+        feedback.classList.add("invalid-feedback");
+        feedback.textContent = "Por favor, selecione uma opção.";
 
         inputNo.classList.add("form-check-input");
         inputNo.setAttribute("type", "radio");
@@ -318,9 +322,9 @@
         inputNo.setAttribute("value", "no");
 
         formCheckNo.classList.add("form-check");
-        formCheckNo.classList.add("form-check-inline");
         formCheckNo.append(labelNo);
         formCheckNo.append(inputNo);
+        formCheckNo.append(feedback);
 
         labelYes.classList.add("form-check-label");
         labelYes.setAttribute("for", "question-" + question.key + "-yes");
@@ -406,6 +410,7 @@
             bsCollapseQuestions.hide();
             bsCollapseResult.show();
         }
+        questionForm.classList.add('was-validated');
     });
 
 })();
