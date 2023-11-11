@@ -1,6 +1,6 @@
 .quizzes {
     .quiz-arquetipos {
-        color: #173b6c;
+        color: #29669C;
 
         .bg-image {
             min-height: 350px;
@@ -16,7 +16,7 @@
     }
 
     .quiz-temperamentos {
-        color: #173b6c;
+        color: #29669C;
 
         .bg-image {
             min-height: 350px;
@@ -61,7 +61,7 @@
     }
 
     button[type=submit] {
-        background: #149ddd;
+        background: #29669C;
         border: 0;
         padding: 10px 24px;
         color: #fff;
@@ -69,7 +69,7 @@
         border-radius: 4px;
 
         &:hover {
-            background: #37b3ed;
+            background: #4A7DA3;
         }
     }
 }
