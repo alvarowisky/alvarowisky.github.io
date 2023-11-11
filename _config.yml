@@ -39,9 +39,6 @@ social-network-links:
   - name: "WhatsApp"
     url: "https://wa.me/+5511992603015"
     icon: "bx bxl-whatsapp"
-  - name: "E-mail"
-    url: "mailto:alvarowisky@hotmail.com"
-    icon: "bx bx-envelope"
 
 plugins:
   - jekyll-paginate
