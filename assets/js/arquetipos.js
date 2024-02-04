@@ -358,8 +358,20 @@
         count++;
     });
 
-    function convertToPercentage(value) {
-        return Math.round(value * 100) + " %";
+    function createResultElement(value) {
+      let percentage = Math.round(value * 100);
+      let span = document.createElement("span");
+      span.textContent = percentage + "%";
+
+      if (percentage >= 80) {
+          span.classList.add("green");
+      } else if (percentage < 80 && percentage >= 60) {
+          span.classList.add("yellow");
+      } else {
+          span.classList.add("red");
+      }
+
+      return span;
     }
 
     function getQuestionResult(questionKey) {
@@ -367,10 +379,13 @@
         let yesAnswers = Array.from(questions).filter(function(element) {
             return element.value == "yes";
         }).length;
-        return convertToPercentage(yesAnswers / 6);
+        return createResultElement(yesAnswers / 6);
     }
 
     const questionForm = document.getElementById('questionForm');
+    const bsCollapseTips = new bootstrap.Collapse('#collapse-tips', {
+        toggle: false
+    });
     const bsCollapseQuestions = new bootstrap.Collapse('#collapse-questions', {
         toggle: false
     });
@@ -394,19 +409,20 @@
             let inocente = getQuestionResult("inocente");
             let governante = getQuestionResult("governante");
 
-            document.getElementById('result-sabio').textContent = sabio;
-            document.getElementById('result-mago').textContent = mago;
-            document.getElementById('result-explorador').textContent = explorador;
-            document.getElementById('result-criador').textContent = criador;
-            document.getElementById('result-heroi').textContent = heroi;
-            document.getElementById('result-rebelde').textContent = rebelde;
-            document.getElementById('result-amante').textContent = amante;
-            document.getElementById('result-tolo').textContent = tolo;
-            document.getElementById('result-cuidador').textContent = cuidador;
-            document.getElementById('result-homem-comum').textContent = homemComum;
-            document.getElementById('result-inocente').textContent = inocente;
-            document.getElementById('result-governante').textContent = governante;
+            document.getElementById('result-sabio').append(sabio);
+            document.getElementById('result-mago').append(mago);
+            document.getElementById('result-explorador').append(explorador);
+            document.getElementById('result-criador').append(criador);
+            document.getElementById('result-heroi').append(heroi);
+            document.getElementById('result-rebelde').append(rebelde);
+            document.getElementById('result-amante').append(amante);
+            document.getElementById('result-tolo').append(tolo);
+            document.getElementById('result-cuidador').append(cuidador);
+            document.getElementById('result-homem-comum').append(homemComum);
+            document.getElementById('result-inocente').append(inocente);
+            document.getElementById('result-governante').append(governante);
 
+            bsCollapseTips.hide();
             bsCollapseQuestions.hide();
             bsCollapseResult.show();
         }

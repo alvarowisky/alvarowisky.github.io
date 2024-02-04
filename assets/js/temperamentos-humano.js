@@ -483,8 +483,11 @@
         countQuestions++;
     });
 
-    function convertToPercentage(value) {
-        return Math.round(value * 100) + " %";
+    function createResultElement(value) {
+      let percentage = Math.round(value * 100);
+      let span = document.createElement("span");
+      span.textContent = percentage + "%";
+      return span;
     }
 
     function getQuestionResult(questionKey) {
@@ -492,9 +495,12 @@
         let yesAnswers = Array.from(questions).filter(function(element) {
             return element.value == questionKey;
         }).length;
-        return convertToPercentage(yesAnswers / 20);
+        return createResultElement(yesAnswers / 20);
     }
 
+    const bsCollapseTips = new bootstrap.Collapse('#collapse-tips', {
+        toggle: false
+    });
     const bsCollapseQuestions = new bootstrap.Collapse('#collapse-questions', {
         toggle: false
     });
@@ -510,11 +516,12 @@
             let fleumatico = getQuestionResult("fleumatico");
             let sanguineo = getQuestionResult("sanguineo");
 
-            document.getElementById('result-colerico').textContent = colerico;
-            document.getElementById('result-melancolico').textContent = melancolico;
-            document.getElementById('result-fleumatico').textContent = fleumatico;
-            document.getElementById('result-sanguineo').textContent = sanguineo;
+            document.getElementById('result-colerico').append(colerico);
+            document.getElementById('result-melancolico').append(melancolico);
+            document.getElementById('result-fleumatico').append(fleumatico);
+            document.getElementById('result-sanguineo').append(sanguineo);
 
+            bsCollapseTips.hide();
             bsCollapseQuestions.hide();
             bsCollapseResult.show();
         }
