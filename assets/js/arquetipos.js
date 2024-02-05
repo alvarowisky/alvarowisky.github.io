@@ -366,9 +366,9 @@
       if (percentage >= 80) {
           span.classList.add("green");
       } else if (percentage < 80 && percentage >= 60) {
-          span.classList.add("yellow");
+          span.classList.add("lime");
       } else {
-          span.classList.add("red");
+          span.classList.add("gray");
       }
 
       return span;

@@ -487,6 +487,15 @@
       let percentage = Math.round(value * 100);
       let span = document.createElement("span");
       span.textContent = percentage + "%";
+
+      if (percentage >= 50) {
+          span.classList.add("green");
+      } else if (percentage < 50 && percentage >= 33) {
+          span.classList.add("lime");
+      } else {
+          span.classList.add("gray");
+      }
+
       return span;
     }
 
