@@ -3,9 +3,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{'/assets/js/main.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
 <script src="{{ '/assets/js/contact.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
-{% if page.url == "/arquetipos/" | prepend: {{site.baseurl}} %}
-<script src="{{ '/assets/js/arquetipos.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
-{% endif %}
 {% if page.url == "/temperamentos-humano/" | prepend: {{site.baseurl}} %}
 <script src="{{ '/assets/js/temperamentos-humano.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
 {% endif %}

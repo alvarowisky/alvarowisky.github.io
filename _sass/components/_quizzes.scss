@@ -7,22 +7,6 @@
 }
 
 .quizzes {
-    .quiz-arquetipos {
-        color: #29669C;
-
-        .bg-image {
-            min-height: 350px;
-            margin: 10px 0;
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/img/arquetipos.jpg') no-repeat center center / cover;
-        }
-
-        &:hover {
-            .bg-image {
-                background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/assets/img/arquetipos.jpg') no-repeat center center / cover;
-            }
-        }
-    }
-
     .quiz-temperamentos {
         color: #29669C;
 
