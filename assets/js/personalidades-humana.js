@@ -806,16 +806,15 @@
     });
 
     function createResultElement(totalScore) {
-        let span = document.createElement("span");
+        let result;
         if (totalScore <= 5) {
-            span.textContent = "Esta camada pode representar um desafio significativo em sua vida atual. Vale a pena explorar mais profundamente os aspectos dessa camada em suas sessões terapêuticas.";
+            result = "Esta camada pode representar um desafio significativo em sua vida atual. Vale a pena explorar mais profundamente os aspectos dessa camada em suas sessões terapêuticas.";
         } else if (totalScore >= 6 && totalScore <= 10) {
-            span.textContent = "Esta é uma área que pode requerer trabalho adicional. Pode haver desafios ou bloqueios que estão impedindo seu pleno desenvolvimento nessa camada.";
+            result = "Esta é uma área que pode requerer trabalho adicional. Pode haver desafios ou bloqueios que estão impedindo seu pleno desenvolvimento nessa camada.";
         } else {
-            span.textContent = "Você parece estar bem alinhado(a) com essa camada, refletindo um bom nível de desenvolvimento e equilíbrio nessa área.";
+            result = "Você parece estar bem alinhado(a) com essa camada, refletindo um bom nível de desenvolvimento e equilíbrio nessa área.";
         }
-
-        return span;
+        return result;
     }
 
     function getQuestionResult(questionType) {
