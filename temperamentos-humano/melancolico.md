@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "Melancólico"
+title: "Temperamento Melancólico - Características e Perfil Completo"
+description: "Compreenda o temperamento melancólico: perfeccionista, sensível e introspectivo. Conheça as características, qualidades, defeitos e como desenvolver este perfil de personalidade."
+keywords: "temperamento melancólico, perfil melancólico, personalidade melancólica, perfeccionista, sensível, introspectivo"
 ---
 
 Melancólico é débil e difícil ao princípio, mas forte e profunda por repetidas impressões. Sua reação apresenta estes mesmos caracteres. Quanto à duração, pode ser longa. O melancólico não esquece facilmente.

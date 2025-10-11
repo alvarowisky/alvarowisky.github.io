@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alvarowisky.github.io/sitemap.xml
+

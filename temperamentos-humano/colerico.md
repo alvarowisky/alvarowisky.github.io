@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "Colérico"
+title: "Temperamento Colérico - Características e Perfil Completo"
+description: "Entenda o temperamento colérico: líder nato, assertivo e determinado. Conheça as características, qualidades, defeitos e como desenvolver este perfil de personalidade."
+keywords: "temperamento colérico, perfil colérico, personalidade colérica, líder nato, características colérico"
 ---
 
 O colérico se excita pronta e violentamente. Raciocina num instante. Mas a impressão lhe fica na alma por muito tempo

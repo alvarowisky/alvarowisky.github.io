@@ -1,19 +1,38 @@
 title: Alvaro Wisky
 email: alvarowisky@hotmail.com
 description: >-
-  Conteúdos relacionados a fisioterapia, acupuntura e psicanálise. Aqui
-  você encontrará informações sobre diferentes técnicas, benefícios e aplicações
-  dessas práticas terapêuticas. Nossos artigos abordam temas como tratamentos de
-  lesões, fortalecimento do corpo, alívio de dores, equilíbrio energético,
-  bem-estar emocional e autoconhecimento. Explore os nossos conteúdos para obter
-  informações úteis e educativas sobre essas áreas e descubra como elas podem
-  contribuir para o seu bem-estar físico, mental e emocional.
+  Atendimento psicanalítico individual, terapia para casais, acompanhamento de adolescentes
+  e sessões de autoconhecimento em São Bernardo do Campo. Oferecemos também fisioterapia
+  e acupuntura com abordagem integrativa. Cuidado personalizado para seu bem-estar físico,
+  mental e emocional. Sessões confidenciais com profissional experiente em psicanálise,
+  psicologia clínica e medicina tradicional chinesa.
 baseurl: ''
 url: 'https://alvarowisky.github.io'
 lang: pt-BR
 
+# SEO settings
+author:
+  name: Alvaro Wisky
+  email: alvarowisky@hotmail.com
+
+# Social sharing
+social:
+  name: Alvaro Wisky
+  links:
+    - https://www.linkedin.com/in/alvaro-wisky/
+    - https://www.instagram.com/alvarowisky/
+
+# Open Graph
+logo: /assets/img/profile-img.jpeg
+
+# SEO keywords (aparecerá como meta keywords)
+keywords: psicanálise, psicoterapia, atendimento psicanalítico, terapia de casal, acompanhamento adolescentes, autoconhecimento, sessões psicanálise, fisioterapia, acupuntura, São Bernardo do Campo
+
+# Sass settings
 sass:
+  implementation: sass-embedded
   style: compressed
+  quiet_deps: true  # Silencia avisos de deprecação de dependências
 
 # fill in your Formspree ID to enable contact form
 formspree: xpzgnajr

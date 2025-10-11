@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "Fleumático"
+title: "Temperamento Fleumático - Características e Perfil Completo"
+description: "Conheça o temperamento fleumático: pacificador, tranquilo e equilibrado. Conheça as características, qualidades, defeitos e como desenvolver este perfil de personalidade."
+keywords: "temperamento fleumático, perfil fleumático, personalidade fleumática, pacificador, tranquilo, equilibrado"
 ---
 
 O fleumático não se excita nunca, ou o faz tão só debilmente. A reação é também débil, quando não chega a faltar por completo. As impressões recebidas desaparecem logo e não deixam vestígios em sua alma.

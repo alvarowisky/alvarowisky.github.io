@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "Sanguíneo"
+title: "Temperamento Sanguíneo - Características e Perfil Completo"
+description: "Descubra o temperamento sanguíneo: otimista, sociável e comunicativo. Conheça as características, qualidades, defeitos e como desenvolver este perfil de personalidade."
+keywords: "temperamento sanguíneo, perfil sanguíneo, personalidade sanguínea, otimista, sociável, comunicativo"
 ---
 
 O sanguíneo se excita fácil e fortemente por qualquer impressão. A reação pode ser também imediata e forte, mas a impressão ou duração pode ser curta. A lembrança de coisas passadas não provoca tão facilmente novas emoções.
