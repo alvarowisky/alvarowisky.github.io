@@ -1,0 +1,96 @@
+.services {
+    padding: 60px 0;
+    
+    .service-item {
+        padding: 30px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-icon {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #29669C 0%, #4a88c7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            i {
+                font-size: 36px;
+                color: #fff;
+            }
+        }
+        
+        .service-content {
+            flex: 1;
+            
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                color: #29669C;
+                margin-bottom: 10px;
+            }
+            
+            p {
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 20px;
+                line-height: 1.6;
+            }
+            
+            .service-action {
+                .btn-service {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 12px 30px;
+                    background: #25D366;
+                    color: #fff;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    
+                    i {
+                        font-size: 20px;
+                    }
+                    
+                    &:hover {
+                        background: #1fb855;
+                        transform: scale(1.05);
+                        box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .service-item {
+            flex-direction: column;
+            text-align: center;
+            
+            .service-content {
+                .service-action {
+                    .btn-service {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
