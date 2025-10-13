@@ -2,8 +2,8 @@
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    right: 15px;
-    bottom: 15px;
+    right: 30px;
+    bottom: 100px; // Ajustado para ficar acima do botão WhatsApp
     z-index: 996;
     background: #29669C;
     width: 40px;
@@ -26,4 +26,25 @@
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
+}
+
+// Ajuste responsivo para mobile - garantir que não sobreponha o WhatsApp
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 20px;
+        bottom: 86px; // Ajustado para mobile (WhatsApp está em bottom: 20px com height: 56px)
+    }
+}
+
+@media (max-width: 360px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 80px; // Ajustado para telas muito pequenas
+        width: 36px;
+        height: 36px;
+
+        i {
+            font-size: 24px;
+        }
+    }
 }

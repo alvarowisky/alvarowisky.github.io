@@ -1,10 +1,10 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="{{'/assets/js/main.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="{{'/assets/js/main.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}" defer></script>
 {% if page.url == "/temperamentos-humano/" | prepend: {{site.baseurl}} %}
-<script src="{{ '/assets/js/temperamentos-humano.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
+<script src="{{ '/assets/js/temperamentos-humano.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}" defer></script>
 {% endif %}
 {% if page.url == "/12-camadas-personalidade-humana/" | prepend: {{site.baseurl}} %}
-<script src="{{ '/assets/js/personalidades-humana.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}"></script>
+<script src="{{ '/assets/js/personalidades-humana.min.js' | relative_url }}?v={{ site.time | date: '%y-%m-%d' }}" defer></script>
 {% endif %}

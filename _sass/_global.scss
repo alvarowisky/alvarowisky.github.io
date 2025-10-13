@@ -1,6 +1,32 @@
+// Smooth scroll nativo
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #272829;
+}
+
+// Skip to Content - Acessibilidade (WCAG)
+.skip-to-content {
+	position: absolute;
+	left: -9999px;
+	top: 20px;
+	z-index: 9999;
+	padding: 12px 24px;
+	background: #29669C;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 4px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+	&:focus {
+		left: 20px;
+		outline: 3px solid #4A7DA3;
+		outline-offset: 2px;
+	}
 }
 
 a {
