@@ -1,0 +1,15 @@
+{
+  "name": "alvarowisky-github-io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build tooling (JS minification, SCSS lint) for the Jekyll site",
+  "scripts": {
+    "build:js": "terser assets/js/main.js -c -m -o assets/js/main.min.js && terser assets/js/personalidades-humana.js -c -m -o assets/js/personalidades-humana.min.js && terser assets/js/temperamentos-humano.js -c -m -o assets/js/temperamentos-humano.min.js",
+    "lint:scss": "stylelint \"_sass/**/*.scss\" \"assets/css/**/*.scss\""
+  },
+  "devDependencies": {
+    "terser": "^5.34.1",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

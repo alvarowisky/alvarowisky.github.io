@@ -1,11 +1,11 @@
 <!-- ======= mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<i class="bi bi-list mobile-nav-toggle d-xl-none" role="button" tabindex="0" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navbar"></i>
 
 <header id="header">
     <div class="d-flex flex-column">
         <div class="profile">
             <img src="/assets/img/profile-img.jpeg" alt="Foto de perfil de Alvaro Wisky - Fisioterapeuta, Acupunturista e Psicanalista em São Bernardo do Campo" class="img-fluid rounded-circle" loading="lazy" width="120" height="120">
-            <h1 class="text-light"><a href="index.html">{{ site.title }}</a></h1>
+            <h1 class="text-light"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
             <div class="social-links mt-3 text-center">
                 {% assign filtered_social_links_footer = site.social-network-links %}
                 {% for social in filtered_social_links_footer %}
