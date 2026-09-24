@@ -2,22 +2,22 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'global';
+@use 'global';
 
 // components
-@import 'components/buttons';
-@import 'components/navbar';
-@import 'components/breadcrumbs';
-@import 'components/quizzes';
-@import 'components/icon-box';
-@import 'components/whatsapp-float';
+@use 'components/buttons';
+@use 'components/navbar';
+@use 'components/breadcrumbs';
+@use 'components/quizzes';
+@use 'components/icon-box';
+@use 'components/whatsapp-float';
 
 // sections
-@import 'sections/general';
-@import 'sections/about';
-@import 'sections/services';
-@import 'sections/download';
-@import 'sections/contact';
-@import 'sections/footer';
-@import 'sections/header';
-@import 'sections/hero';
+@use 'sections/general';
+@use 'sections/about';
+@use 'sections/services';
+@use 'sections/download';
+@use 'sections/contact';
+@use 'sections/footer';
+@use 'sections/header';
+@use 'sections/hero';
